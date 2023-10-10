@@ -7,7 +7,9 @@ async function fetchData() {
   const data = await response.json();
   console.log(data);
   console.log(data.count);
-  console.log(`data: ${data} \ncount: ${data.count} \nnext: ${data.next}`);
+  //   console.log(
+  //     `data: ${data} \ncount: ${data.count} \nnext: ${data.next} \neye-color: ${data.results[2].eye_color}`
+  //   );
   console.log(
     "data: ",
     data,
@@ -19,5 +21,4 @@ async function fetchData() {
     data.results[2].eye_color
   );
 }
-
 fetchData();
